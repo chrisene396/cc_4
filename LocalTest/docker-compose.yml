@@ -1,7 +1,7 @@
 version: '3'
 services:
   server:
-    build: ./Server
+    build: ./server
     image: chrisvb96/cloudcomputinggroup96:latest
     container_name: cloudcomputinggroup96
     depends_on:

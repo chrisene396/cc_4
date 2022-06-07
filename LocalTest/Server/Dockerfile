@@ -1,15 +1,15 @@
 FROM node:alpine
 
-RUN mkdir -p /usr/src/server
+RUN mkdir -p /usr/src/Server
 
 
-WORKDIR /usr/src/server
+WORKDIR /usr/src/Server
 
-COPY package.json /usr/src/server/
+COPY package.json /usr/src/Server/
 
 RUN npm install
 
-COPY . /usr/src/server
+COPY . /usr/src/Server
 
 EXPOSE 3000
 

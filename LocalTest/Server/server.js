@@ -67,7 +67,7 @@ app.get('/api/profile', (req, res) => {
  * SELF-MADE: return string when /api/exercise2 is called.
  */
 app.get('/api/exercise2', (req, res) => {
-  res.json("group 96 application deployed using docker");
+  res.send("group 96 application deployed using docker");
 });
 
 /*

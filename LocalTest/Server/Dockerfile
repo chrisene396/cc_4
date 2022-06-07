@@ -1,3 +1,5 @@
+#!/bin/bash
+
 FROM node:alpine
 
 RUN mkdir -p /usr/src/Server

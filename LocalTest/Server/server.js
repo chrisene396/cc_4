@@ -70,6 +70,7 @@ app.get('/api/exercise2', (req, res) => {
   res.send("group 96 application deployed using docker");
 });
 
+
 /*
  * Get All books information
  */

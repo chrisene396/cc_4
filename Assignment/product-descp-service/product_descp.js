@@ -14,7 +14,8 @@ module.exports = function (options) {
             for(i=0; i<mockData.length; i++){
                 if(mockData[i].product_id == msg.productId){
                     respond(null, { result : mockData[i].product_url});
-                } 
+                }
+            }
         }
         else{
              respond(null, { result: ''});
@@ -29,6 +30,7 @@ module.exports = function (options) {
                 if(mockData[i].product_id == msg.productId){
                     respond(null, { result : mockData[i].product_name});
                 } 
+            }
         }
         else{
              respond(null, { result: ''});

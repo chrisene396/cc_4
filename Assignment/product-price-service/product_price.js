@@ -15,6 +15,7 @@ module.exports = function (options) {
                 if(mockData[i].product_id == msg.productId){
                     respond(null, { result : mockData[i].product_price});
                 } 
+            }
         }
         else{
              respond(null, { result: ''});

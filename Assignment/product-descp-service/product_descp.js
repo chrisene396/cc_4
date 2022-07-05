@@ -11,30 +11,28 @@ module.exports = function (options) {
 
     function productURL(msg, respond){
         if(msg.productId){
-            for (const element in mockData){
-                if(element[product_id] == msg.productId){
-                respond(null, { result : element[product_url]});
-                }
-            }
+            for(i=0; i<mockData.length; i++){
+                if(mockData[i].product_id == msg.productId){
+                    respond(null, { result : mockData[i].product_url]});
+                } 
         }
         else{
              respond(null, { result: ''});
-        }  
+        } 
     }
 
 
 
     function productName(msg, respond){
         if(msg.productId){
-            for (const element in mockData){
-                if(element[product_id] == msg.productId){
-                respond(null, { result : element[product_name]});
-                }
-            }
+            for(i=0; i<mockData.length; i++){
+                if(mockData[i].product_id == msg.productId){
+                    respond(null, { result : mockData[i].product_name]});
+                } 
         }
         else{
              respond(null, { result: ''});
-        } 
+        }
     }
 
 }

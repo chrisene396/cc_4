@@ -13,7 +13,7 @@ module.exports = function (options) {
         if(msg.productId){
             for (const element in mockData){
                 if(element.product_id == msg.productId){
-                respond(null, { result : element.product_price});
+                respond(null, { result : element[product_price]});
                 }
             }
         }

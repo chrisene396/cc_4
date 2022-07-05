@@ -10,10 +10,15 @@ module.exports = function (options) {
 
 
     function productPrice(msg, respond){
-        for (const element in mockData){
-            if(element.product_id == msg.productId){
-                respond(null, { result : element.product_price})
+        if(msg.productId){
+            for (const element in mockData){
+                if(element.product_id == msg.productId){
+                respond(null, { result : element.product_price});
+                }
             }
         }
+        else{
+             respond(null, { result: ''});
+        } 
     }
 }

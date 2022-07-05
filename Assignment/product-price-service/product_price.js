@@ -9,9 +9,9 @@ module.exports = function (options) {
 
 
 
-    function productPrice(id, respond){
+    function productPrice(msg, respond){
         for (const element in mockData){
-            if(element.product_id == id){
+            if(element.product_id == msg.productId){
                 respond(null, { result : element.product_price})
             }
         }

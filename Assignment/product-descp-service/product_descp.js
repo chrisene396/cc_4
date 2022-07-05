@@ -9,9 +9,9 @@ module.exports = function (options) {
 
     //To DO: add the pattern functions and describe the logic inside the function
 
-    function productURL(id, respond){
+    function productURL(msg, respond){
         for (const element in mockData){
-            if(element.product_id == id){
+            if(element.product_id == msg.productId){
                 respond(null, { result : element.product_url})
             }
         }
@@ -19,9 +19,9 @@ module.exports = function (options) {
 
 
 
-    function productName(id, respond){
+    function productName(msg, respond){
         for (const element in mockData){
-            if(element.product_id == id){
+            if(element.product_id == msg.productId){
                 respond(null, { result : element.product_name})
             }
         }
